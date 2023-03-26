@@ -6,16 +6,17 @@ public class JoystickFPSCamera : MonoBehaviour
 {
     [SerializeField] FixedJoystick _joyStick;
     [SerializeField] float _cameraMoveSpeed;
+    Vector3 _cameraAngle;
     private void Update()
     {
-        Vector3 cameraAngle =new Vector3(
+        _cameraAngle =new(
             _joyStick.Horizontal * _cameraMoveSpeed,
             _joyStick.Vertical * _cameraMoveSpeed,
             0);
     }
     private void FixedUpdate()
     {
-        
+        transform.eulerAngles += new Vector3(-_cameraAngle.y, _cameraAngle.x);
     }
     void RotateByJoystick()
     {
