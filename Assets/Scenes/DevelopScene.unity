@@ -599,7 +599,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _joyStick: {fileID: 1851373660}
-  _cameraMoveSpeed: 2
+  _cameraMoveSpeed: 1
+  _limitAngleMaxUP: 40
+  _limitAngleMinDown: -40
 --- !u!1 &1110908264
 GameObject:
   m_ObjectHideFlags: 0

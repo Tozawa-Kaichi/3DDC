@@ -11,22 +11,30 @@ public class JoystickFPSCamera : MonoBehaviour
     Vector3 _cameraAngle;
     private void Update()
     {
-        Vector3 angle =new(
-            _joyStick.Horizontal * _cameraMoveSpeed,
-            _joyStick.Vertical * _cameraMoveSpeed,
-            0);
-        _cameraAngle += new Vector3(-angle.y, angle.x);
-        Mathf.Clamp(transform.eulerAngles.x, _limitAngleMinDown, _limitAngleMaxUP);
-        transform.eulerAngles = _cameraAngle;
-        
+        RotateByJoystick();
+        if(_cameraAngle.x >= _limitAngleMaxUP)
+        {
+            _cameraAngle.x = _limitAngleMaxUP;
+        }
+        else if(_cameraAngle.x <= _limitAngleMinDown)
+        {
+            _cameraAngle.x = _limitAngleMinDown;
+        }
+
+
     }
     private void FixedUpdate()
     {
-
         
+
     }
     void RotateByJoystick()
     {
-
+        Vector3 angle = new(
+            _joyStick.Horizontal * _cameraMoveSpeed,
+            -_joyStick.Vertical * _cameraMoveSpeed,
+            0);
+        _cameraAngle += new Vector3(angle.y, angle.x);
+        transform.eulerAngles = new Vector3(Mathf.Repeat(_cameraAngle.x,360),_cameraAngle.y);
     }
 }
