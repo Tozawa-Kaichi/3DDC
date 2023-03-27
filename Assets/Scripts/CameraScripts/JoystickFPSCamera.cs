@@ -8,20 +8,22 @@ public class JoystickFPSCamera : MonoBehaviour
     [SerializeField] float _cameraMoveSpeed;
     [SerializeField] float _limitAngleMaxUP;
     [SerializeField] float _limitAngleMinDown;
-
     Vector3 _cameraAngle;
     private void Update()
     {
-        _cameraAngle =new(
+        Vector3 angle =new(
             _joyStick.Horizontal * _cameraMoveSpeed,
             _joyStick.Vertical * _cameraMoveSpeed,
             0);
-
+        _cameraAngle += new Vector3(-angle.y, angle.x);
+        Mathf.Clamp(transform.eulerAngles.x, _limitAngleMinDown, _limitAngleMaxUP);
+        transform.eulerAngles = _cameraAngle;
+        
     }
     private void FixedUpdate()
     {
-        transform.eulerAngles += new Vector3(
-            Mathf.Clamp(_cameraAngle.y, _limitAngleMinDown, _limitAngleMaxUP) , _cameraAngle.x);
+
+        
     }
     void RotateByJoystick()
     {
