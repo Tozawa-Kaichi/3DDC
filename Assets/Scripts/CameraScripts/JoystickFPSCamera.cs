@@ -22,6 +22,7 @@ public class JoystickFPSCamera : MonoBehaviour
         }
 
 
+
     }
     private void FixedUpdate()
     {
