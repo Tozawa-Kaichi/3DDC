@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// 無理してこれ使うよりシネマシーンの方が安定している
+/// </summary>
 public class JoystickFPSCamera : MonoBehaviour
 {
     [SerializeField] FixedJoystick _joyStick;
