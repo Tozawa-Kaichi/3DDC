@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TozawaWinWorld.unity
+    guid: 62ab9db66e25eae41babe2123c546987
   m_configObjects: {}

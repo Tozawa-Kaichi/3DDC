@@ -1,0 +1,176 @@
+--- !u!1 &-2148
+Scene:
+  - !u!1 &22982
+    GameObject:
+      m_ObjectHideFlags: 0
+      m_PrefabParentObject: {fileID: 0}
+      m_CorrespondingSourceObject: {fileID: 0}
+      m_Layer: 0
+      m_Name: Main Camera
+      m_TagString: MainCamera
+      m_StaticEditorFlags: 0
+      m_IsActive: true
+      m_Component:
+    - component: {fileID: c09debabe3b446e0b5525b923a5026da}
+      &c09debabe3b446e0b5525b923a5026da UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: 0ce9dce74e9e40c9a247ee8ff4fea2b9}
+      &0ce9dce74e9e40c9a247ee8ff4fea2b9 UnityEngine.Camera, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: bda2489a126e4883b9f43feed2c902ac}
+      &bda2489a126e4883b9f43feed2c902ac UnityEngine.AudioListener, UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+  - !u!1 &22976
+    GameObject:
+      m_ObjectHideFlags: 0
+      m_PrefabParentObject: {fileID: 0}
+      m_CorrespondingSourceObject: {fileID: 0}
+      m_Layer: 0
+      m_Name: Directional Light
+      m_TagString: Untagged
+      m_StaticEditorFlags: 0
+      m_IsActive: true
+      m_Component:
+    - component: {fileID: 9540c66f8e2a4a82aa5f98b0feb4d0dd}
+      &9540c66f8e2a4a82aa5f98b0feb4d0dd UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: 49654b1bb975455a9a2862afedabcaee}
+      &49654b1bb975455a9a2862afedabcaee UnityEngine.Light, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+        m_BakedIndex: 0
+  - !u!1 &-2238
+    GameObject:
+      m_ObjectHideFlags: 0
+      m_PrefabParentObject: {fileID: 0}
+      m_CorrespondingSourceObject: {fileID: 0}
+      m_Layer: 0
+      m_Name: Player
+      m_TagString: Untagged
+      m_StaticEditorFlags: 0
+      m_IsActive: true
+      m_Component:
+    - component: {fileID: 3dbbfef4bc3c4bf5b17604bdaadb1797}
+      &3dbbfef4bc3c4bf5b17604bdaadb1797 UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: 29dcb79add5f4abd821118884d94ccd6}
+      &29dcb79add5f4abd821118884d94ccd6 UnityEngine.MeshFilter, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: 2b974bc04c3c4d7291f929680950b85f}
+      &2b974bc04c3c4d7291f929680950b85f UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: d2de6b5d8e374ee7a8c014c1c41ae1ea}
+      &d2de6b5d8e374ee7a8c014c1c41ae1ea UnityEngine.BoxCollider, UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: f1c31b325bc7414a83393ed9c307d55a}
+      &f1c31b325bc7414a83393ed9c307d55a SceneSerializer, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+  - !u!1 &-4290
+    GameObject:
+      m_ObjectHideFlags: 0
+      m_PrefabParentObject: {fileID: 0}
+      m_CorrespondingSourceObject: {fileID: 0}
+      m_Layer: 5
+      m_Name: Canvas
+      m_TagString: Untagged
+      m_StaticEditorFlags: 0
+      m_IsActive: true
+      m_Component:
+    - component: {fileID: 2d7d8a51641e483491cf50da7337398f}
+      &2d7d8a51641e483491cf50da7337398f UnityEngine.RectTransform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: a2f0bdbe2fb949e3b77e4649c42b6ec7}
+      &a2f0bdbe2fb949e3b77e4649c42b6ec7 UnityEngine.Canvas, UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: dc05713c7a67494aa59d680d19986317}
+      &dc05713c7a67494aa59d680d19986317 UnityEngine.UI.CanvasScaler, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+        m_UiScaleMode: constantpixelsize
+        m_ReferencePixelsPerUnit: 100
+        m_ScaleFactor: 1
+        m_ReferenceResolution: (800.00, 600.00)
+        m_ScreenMatchMode: matchwidthorheight
+        m_MatchWidthOrHeight: 0
+        m_PhysicalUnit: points
+        m_FallbackScreenDPI: 96
+        m_DefaultSpriteDPI: 96
+        m_DynamicPixelsPerUnit: 1
+        m_Canvas: {fileID: 0}
+        m_PrevScaleFactor: 1
+        m_PrevReferencePixelsPerUnit: 100
+        m_PresetInfoIsWorld: false
+    - component: {fileID: e2625f121ef34869be683adcb2d27ebd}
+      &e2625f121ef34869be683adcb2d27ebd UnityEngine.UI.GraphicRaycaster, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+        m_IgnoreReversedGraphics: true
+        m_BlockingObjects: none
+        m_BlockingMask: unityengine.layermask
+        m_Canvas: {fileID: 0}
+        m_RaycastResults: { }
+    - component: {fileID: 88d4e71a346042bdbb17efd83141912c}
+      &88d4e71a346042bdbb17efd83141912c UnityEngine.CanvasRenderer, UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+        <isMask>k__BackingField: false
+  - !u!1 &-4302
+    GameObject:
+      m_ObjectHideFlags: 0
+      m_PrefabParentObject: {fileID: 0}
+      m_CorrespondingSourceObject: {fileID: 0}
+      m_Layer: 0
+      m_Name: EventSystem
+      m_TagString: Untagged
+      m_StaticEditorFlags: 0
+      m_IsActive: true
+      m_Component:
+    - component: {fileID: 870a6c12f7a84e79890ab36dcacc6fe6}
+      &870a6c12f7a84e79890ab36dcacc6fe6 UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: 5ba320fc56364cd79578cca507cd62fa}
+      &5ba320fc56364cd79578cca507cd62fa UnityEngine.EventSystems.EventSystem, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+        m_SystemInputModules: { }
+        m_CurrentInputModule: {fileID: 0}
+        m_FirstSelected: {fileID: 0}
+        m_sendNavigationEvents: true
+        m_DragThreshold: 10
+        m_CurrentSelected: {fileID: 0}
+        m_HasFocus: true
+        m_SelectionGuard: false
+        m_DummyData: { }
+    - component: {fileID: 6c37a604fe7f439799a09efc07739e0a}
+      &6c37a604fe7f439799a09efc07739e0a UnityEngine.EventSystems.StandaloneInputModule, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+        m_PrevActionTime: 0
+        m_LastMoveVector: (0.00, 0.00)
+        m_ConsecutiveMoveCount: 0
+        m_LastMousePosition: (0.00, 0.00)
+        m_MousePosition: (0.00, 0.00)
+        m_CurrentFocusedGameObject: {fileID: 0}
+        m_InputPointerEvent: { }
+        m_HorizontalAxis: "Horizontal"
+        m_VerticalAxis: "Vertical"
+        m_SubmitButton: "Submit"
+        m_CancelButton: "Cancel"
+        m_InputActionsPerSecond: 10
+        m_RepeatDelay: 0.5
+        m_ForceModuleActive: false
+        m_PointerData: { }
+        m_RaycastResultCache: { }
+        m_InputOverride: {fileID: 0}
+  - !u!1 &-9696
+    GameObject:
+      m_ObjectHideFlags: 0
+      m_PrefabParentObject: {fileID: 0}
+      m_CorrespondingSourceObject: {fileID: 0}
+      m_Layer: 0
+      m_Name: tozawaWin
+      m_TagString: Untagged
+      m_StaticEditorFlags: 0
+      m_IsActive: true
+      m_Component:
+    - component: {fileID: 9971e20a6906456c899a3766d288da7a}
+      &9971e20a6906456c899a3766d288da7a UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+    - component: {fileID: 038d43cc23b44a768105d1b1df5991dd}
+      &038d43cc23b44a768105d1b1df5991dd UnityEngine.SpriteRenderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null:
+        m_ObjectHideFlags: 0
+        m_SpriteChangeEvent: { }
