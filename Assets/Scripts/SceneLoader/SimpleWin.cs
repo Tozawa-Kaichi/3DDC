@@ -2,44 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class SimpleWin : MonoBehaviour
 {
-    public string textToDisplay = "戸澤の勝ち";
-    private Camera mainCamera;
 
     void Start()
     {
-        mainCamera = Camera.main;
-        Debug.Log(mainCamera);
-        foreach (GameObject obj in FindObjectsOfType<GameObject>())
+        // シーン内の全てのオブジェクトを取得
+        GameObject[] allObjects = FindObjectsOfType<GameObject>();
+
+        // オブジェクトを１つずつ確認し、自分とライトとカメラ以外は破壊する
+        foreach (GameObject obj in allObjects)
         {
-            if (obj != gameObject && obj.tag != "MainCamera")
+            if (obj != this.gameObject && obj.GetComponent<Light>() == null && obj.GetComponent<Camera>() == null)
             {
-                obj.SetActive(false);
+                Destroy(obj);
             }
         }
-
-        Vector3 camPos = mainCamera.transform.position;
-        Vector3 camForward = mainCamera.transform.forward;
-        Vector3 textPos = camPos + camForward * 5f;
-
-        GameObject textObj = new GameObject("TextObject");
-        textObj.transform.position = textPos;
-        textObj.transform.LookAt(camPos);
-
-        Text textComp = textObj.AddComponent<Text>();
-        textObj.AddComponent<Canvas>();
-        textComp.text = textToDisplay;
-        textComp.fontSize = 100;
-        textComp.color = Color.white;
-
-        RectTransform rectTrans = textObj.GetComponent<RectTransform>();
-        rectTrans.sizeDelta = new Vector2(1000, 300);
     }
-
-    void Update()
+    void OnDestroy()
     {
-        
+        // 自身が破壊されたら現在のシーンを再読み込みする
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
