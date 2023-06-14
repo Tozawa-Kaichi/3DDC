@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        _rb.velocity = new Vector3(_h,0,_v).normalized * _moveSpeed;
+        Vector3 velocity = new Vector3(_h, 0, _v).normalized * _moveSpeed;
+        _rb.velocity = new Vector3(velocity.x, _rb.velocity.y, velocity.z);
     }
 }
