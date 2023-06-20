@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TozawaWinWorld.unity
-    guid: 62ab9db66e25eae41babe2123c546987
+    path: Assets/Scenes/TittleScene.unity
+    guid: 89ad535814ec90445b78913e852ea28e
+  - enabled: 1
+    path: Assets/Scenes/UIMAPScene.unity
+    guid: a78d0cce5f4c62a4aa0fcba9aa3a2b6f
+  - enabled: 1
+    path: Assets/Scenes/BattleScene.unity
+    guid: dda6dad92266a364fb069c848a1dd54d
   m_configObjects: {}
