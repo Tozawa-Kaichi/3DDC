@@ -6,7 +6,7 @@ namespace SkillDataNamespace
     public class SkillData : ScriptableObject
     {
         public string skillName; // スキル名
-        public string description; // スキルの説明
+        [Header("スキルの説明")]public string description; // スキルの説明
         public Sprite icon; // スキルのアイコン
         public SkillType skillType; // スキルの種類
         public float cooldownTime; // スキルのクールタイム

@@ -394,6 +394,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1498163186 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7313369057728241588, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
+  m_PrefabInstance: {fileID: 7313369056773452480}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1851373660 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3889392002333006965, guid: 25b3e374e87918c40ad027f4ae28c906, type: 3}
@@ -405,6 +410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1971063535 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7313369055734771630, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
+  m_PrefabInstance: {fileID: 7313369056773452480}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2116460952052061648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -509,6 +519,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2443133151024890915, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2443133151024890915, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1971063535}
     - target: {fileID: 7313369055734771624, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
       propertyPath: m_Name
       value: Player
@@ -517,6 +535,14 @@ PrefabInstance:
       propertyPath: _joyStick
       value: 
       objectReference: {fileID: 369943780}
+    - target: {fileID: 7313369055734771625, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
+      propertyPath: _useJoystick
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313369055734771625, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
+      propertyPath: _cameraTransform
+      value: 
+      objectReference: {fileID: 1498163186}
     - target: {fileID: 7313369055734771630, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -565,5 +591,9 @@ PrefabInstance:
       propertyPath: _joyStick
       value: 
       objectReference: {fileID: 1851373660}
+    - target: {fileID: 7313369057728241589, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1de75d4931ddcc429d4adde33ae2edc, type: 3}

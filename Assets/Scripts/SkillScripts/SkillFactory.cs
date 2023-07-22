@@ -24,7 +24,6 @@ public class SkillFactory
                 throw new ArgumentException("Invalid skill type: " + skillType);
         }
     }
-
 }
 //このコードでは、SkillFactory クラスがスキルの生成を担当します。SkillType 列挙型を使用してスキルの種類を指定し、Factory Method パターンを用いて適切なスキルクラスのインスタンスを生成して返します。
 

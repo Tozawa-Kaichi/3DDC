@@ -3,7 +3,8 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-using SkillType = SkillFactory.SkillType;//SkillFactory.SkillTypeをSkillTypeとしてエイリアス（別名）を定義
+using SkillType = SkillFactory.SkillType;
+//SkillFactory.SkillTypeをSkillTypeとしてエイリアス（別名）を定義
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject skillUIPrefab; // スキルUIのプレハブ

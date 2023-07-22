@@ -6,7 +6,7 @@ public class ArtsUIController : MonoBehaviour
 {
     [SerializeField] private int _count = 5;
     private GameObject[] _cells;
-    public int _selectedIndex;
+    public int _selectedIndex =0;//åªç›ëIëíÜÇÃÉXÉLÉãî‘çÜ
     [SerializeField] List<Sprite> _knightArtsImage;
     [SerializeField] List<Sprite> _wizardArtsImage;
     [SerializeField] List<Sprite> _rogueArtsImage;
@@ -18,23 +18,11 @@ public class ArtsUIController : MonoBehaviour
             var obj = new GameObject($"Cell{i}");
             obj.transform.parent = transform;
             obj.AddComponent<Image>();
-            //Image objImage = obj.GetComponent<Image>();
-            //if (i >=1)
-            //{
-            //    if (FadeSceneLoader.currentCharacter == "SelectKnight")
-            //    {
-            //        objImage = _knightArtsImage[i].;
-            //    }
-            //    else if (FadeSceneLoader.currentCharacter == "SelectRogue")
-            //    {
-            //        objImage = _rogueArtsImage[i];
-            //    }
-            //    else if (FadeSceneLoader.currentCharacter == "SelectWizzard")
-            //    {
-            //        objImage = _wizardArtsImage[i];
-            //    }
-            //}
-
+            Image objImage = obj.GetComponent<Image>();
+            if (i < _knightArtsImage.Count)
+            {
+                objImage.sprite = _knightArtsImage[i];
+            }
             _cells[i] = obj;
         }
         OnSelectedChanged();

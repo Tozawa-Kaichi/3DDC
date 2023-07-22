@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.029086616, g: 0.029897615, b: 0.029896023, a: 1}
+  m_IndirectSpecularColor: {r: 0.029086342, g: 0.029897291, b: 0.02989613, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -279,8 +279,8 @@ RectTransform:
   - {fileID: 2073105405}
   - {fileID: 270722790}
   - {fileID: 1464140028}
-  - {fileID: 360292669}
   - {fileID: 1539552253}
+  - {fileID: 360292669}
   m_Father: {fileID: 1160855313}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -851,7 +851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3921025706012065258, guid: 86da9f72a5cea6445bacec5a538bd9fc, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3921025706012065258, guid: 86da9f72a5cea6445bacec5a538bd9fc, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1098,7 +1098,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1386
+  m_Name: pb_Mesh-4944
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1311,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8893684030438149016, guid: 77d82feea2f2c8a42b9fc542bd4eabf0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8893684030438149017, guid: 77d82feea2f2c8a42b9fc542bd4eabf0, type: 3}
       propertyPath: near clip plane
       value: 0.001
@@ -1341,7 +1345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8893684031377713507, guid: 77d82feea2f2c8a42b9fc542bd4eabf0, type: 3}
       propertyPath: m_FollowOffset.z
-      value: -58.94781
+      value: 3.912697
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8893684030438148967, guid: 77d82feea2f2c8a42b9fc542bd4eabf0, type: 3}
@@ -2216,7 +2220,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 131655467}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3461,11 +3465,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3024608472708614772, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024608473090305755, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3024608473093226496, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024608473093226497, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -53.4
       objectReference: {fileID: 0}
     - target: {fileID: 3024608473360959331, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
       propertyPath: m_Name
@@ -3615,9 +3627,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3024608473947954801, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3024608474258197823, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.093
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024608474530371731, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.322
       objectReference: {fileID: 0}
     - target: {fileID: 4934321813405078263, guid: 986089542ee5f524cb0882cc1693ee35, type: 3}
       propertyPath: m_Range

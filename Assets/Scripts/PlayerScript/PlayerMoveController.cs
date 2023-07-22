@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMoveController : MonoBehaviour
 {
     [SerializeField] FixedJoystick _joyStick;
     [SerializeField] float _moveSpeed;

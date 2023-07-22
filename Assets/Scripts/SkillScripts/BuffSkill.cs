@@ -44,7 +44,7 @@ public class BuffSkill : SkillBase, ISkillEffect
 
     private IEnumerator BuffDurationCoroutine()
     {
-        PlayerController playerController = ServiceLocator.GetService<PlayerController>();
+        PlayerMoveController playerController = ServiceLocator.GetService<PlayerMoveController>();
         float originalSpeed = playerController.EffectiveMoveSpeed;
         float originalMultiplier = playerController.MoveSpeedMultiplier;
 
